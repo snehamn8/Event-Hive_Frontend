@@ -1,0 +1,48 @@
+/* src/pages/admin/AdminForm.css */
+
+.admin-form-container {
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .admin-form input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .admin-form button {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .admin-form button:hover {
+    background-color: #5248e2;
+  }
+  
+  .msg {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  

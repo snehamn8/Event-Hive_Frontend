@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* index.css or global.css */
+:root {
+  --text-color: #333;
+  --bg-color: #fff;
+  --card-bg: #f9f9f9;
+  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode {
+  --text-color: #eee;
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --card-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}

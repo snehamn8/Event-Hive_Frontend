@@ -1,0 +1,143 @@
+/* Base Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Dark Mode Header */
+  .header.dark {
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  
+  /* Logo */
+  .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Navigation Links */
+  .nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover,
+  .nav a.active {
+    color: #ff5a5f;
+  }
+  
+  .nav a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ff5a5f;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    border-radius: 2px;
+  }
+  
+  /* User greeting & logout */
+  .user-name {
+    margin-right: 10px;
+    font-weight: 500;
+  }
+  
+  .logout-btn {
+    padding: 6px 12px;
+    background-color: #ff5a5f;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #e14c4f;
+  }
+  
+  /* Right section: Toggle + Menu icon */
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Dark/Light Toggle */
+  .theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-right: 15px;
+    color: inherit;
+    transition: transform 0.2s ease;
+  }
+  
+  .theme-toggle:hover {
+    transform: scale(1.1);
+    color: #ffa500;
+  }
+  
+  /* Hamburger Menu for Mobile */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 22px;
+    height: 2px;
+    background-color: currentColor;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background-color: inherit;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 200px;
+      padding: 20px;
+      display: none;
+      box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav.open {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  }
+  

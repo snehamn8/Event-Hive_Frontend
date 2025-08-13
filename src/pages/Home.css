@@ -1,0 +1,209 @@
+/* src/pages/Home.css */
+
+.home-page {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 20px;
+    background: #f5f7fb;
+    color: #222;
+  }
+  
+  /* ---------- HERO SECTION ---------- */
+  .hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #7f5af0, #ff7eb3);
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    animation: fadeInUp 0.7s ease;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+  
+  .cta-btn {
+    background: #ffffff;
+    color: #7f5af0;
+    padding: 14px 32px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cta-btn:hover {
+    background: #ffdbf9;
+    color: #5c2eff;
+  }
+  
+  /* ---------- FEATURES ---------- */
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  
+  .feature-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(14px);
+    padding: 30px;
+    border-radius: 16px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 12px 32px rgba(127, 90, 240, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 40px rgba(127, 90, 240, 0.25);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #5c2eff;
+  }
+  
+  .feature-card p {
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  /* ---------- EVENT CARDS ---------- */
+  .popular-events {
+    margin-bottom: 60px;
+  }
+  
+  .popular-events h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #7f5af0;
+  }
+  
+  .event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .event-card {
+    background: linear-gradient(145deg, #ffffff, #f0eaff);
+    border-radius: 16px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .event-card h4 {
+    margin: 16px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .event-card p {
+    margin: 0 16px 12px;
+    color: #555;
+  }
+  
+  .event-card a {
+    display: block;
+    margin: 0 16px 16px;
+    color: #7f5af0;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .event-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ---------- TESTIMONIAL ---------- */
+  .testimonials {
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    padding: 50px 30px;
+    border-radius: 16px;
+    text-align: center;
+    color: #222;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  }
+  
+  .testimonials h2 {
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .testimonial-card {
+    font-style: italic;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  
+  .testimonial-card span {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #5c2eff;
+  }
+  
+  /* ---------- ANIMATION ---------- */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 768px) {
+    .features,
+    .event-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature-card,
+    .event-card {
+      width: 90%;
+    }
+  
+    .hero-section h1 {
+      font-size: 2.3rem;
+    }
+  }
+  

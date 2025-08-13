@@ -1,0 +1,24 @@
+.blog-details {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.blog-details .meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.blog-details .blog-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.blog-details .content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

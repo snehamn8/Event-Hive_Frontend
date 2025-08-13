@@ -1,0 +1,22 @@
+.main-footer {
+    background: #111;
+    color: #ccc;
+    padding: 20px 30px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    color: #00bfff;
+  }
+  

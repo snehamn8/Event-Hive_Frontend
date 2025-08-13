@@ -1,0 +1,108 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    height: 100vh;
+    background: linear-gradient(to right, #6c63ff, #00bcd4);
+  }
+  
+  .signup-form {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .signup-form h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 12px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+  }
+  
+  .signup-form input:focus {
+    border-color: #6c63ff;
+    outline: none;
+  }
+  
+  .signup-form button {
+    width: 100%;
+    background: #619eff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .signup-form button:hover {
+    background-color: #0b80e7;
+  }
+  
+  .error-msg {
+    color: #2f86d3;
+    background: #ffebee;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+  }
+  
+  .login-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .login-link a {
+    color: #6c63ff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .login-link a:hover {
+    color: #3f3da3;
+  }
+
+  .password-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .password-wrapper input {
+    width: 100%;
+    padding: 12px 40px 12px 12px; /* Right padding for icon space */
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .toggle-eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  
+  
